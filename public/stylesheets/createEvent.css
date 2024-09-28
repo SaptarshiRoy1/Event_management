@@ -1,0 +1,161 @@
+*::before{
+    content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: #a4f98e;
+              opacity: 0.3; /* Adjust opacity level */
+              z-index: -1; /* Ensure background image is behind the text */
+  }
+
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="date"], textarea, button {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+#head{
+width: 100%;
+font-size: 25px;
+font-weight: 800;
+}
+
+/* #holidayPackages {
+    margin-top: 20px;
+    text-align: left;
+} */
+
+#eventForm{font-size: 20px;
+    background: white;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: -3px -3px 7px #168f1e, 3px 3px 5px #208a12;
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* #holiday input{
+    border-radius: 10px;
+    border: 1px solid black;
+} */
+
+/* .delete-btn{
+    border: 0px;
+  box-shadow: -3px -3px 7px #ab0202, 3px 3px 5px #930101;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 29px;
+  background-color: red;
+  padding: 4px;
+  margin: 10px;
+  margin-bottom: 0px;
+} */
+/* .delete-btn:hover{
+  background-color: rgb(199, 3, 3);
+  box-shadow: inset -2px -2px 3px #7f0101, inset 2px 2px 3px #570101;
+} */
+/* .cardcontainer{
+    display: flex;
+    flex-direction: row;
+} */
+/* .cards,.Addedcards{
+    background: white;
+    align-items: center;
+    margin :20px;
+    margin-top: 10px;
+    width: 32rem;
+    border-radius: 8px;
+    /* box-shadow: -3px -3px 7px #ceced1, 3px 3px 5px #ceced1; */
+    /* padding: 10px;
+    word-wrap: break-word;
+
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+} */ 
+/* .Addedcards{
+    width:20rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#packageList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+/* #AddedCardDeleteBtn{
+    width: 5rem;
+} */
+
+#backBtn{
+    background: none;
+    background: #ffffff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 100%;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    box-shadow: 3px 3px 5px #aeaeb0;
+    cursor: pointer;
+}
+
+#Btn{
+    padding: 10px;
+    background-color: #ec1e1e;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffff;
+}
+#Btn:hover{
+    background-color: #b82323;
+}
+
+#backBtn{
+    /* padding: 5px; */
+    width: auto;
+}
+#backBtn:hover {
+    background: none;
+    border: none;
+    background: #ecf0f3;
+    outline: none;
+    /* height: 35px; */
+    /* width: 100%; */
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 3px #ffffff, inset 2px 2px 3px #ceced1;
+  }

@@ -1,0 +1,105 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+.page{
+  background-color: #d0fed0;
+  z-index: 0;
+
+}
+
+.container{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding:20px;
+}
+
+.navbar .nav {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+  font-size: 1.2rem
+}
+
+.navbar-inverse {
+  background-color: #003300;
+  border-color: #003300;
+  z-index: 100
+}
+.navbar-inverse .navbar-nav{
+  list-style-type: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  background-color: #002200;
+  color: #FFCC00;
+  border-radius: 15px;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+  color: #FFCC00
+}
+
+
+/* -----body */
+.background{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.background p{
+  word-wrap: break-word;
+}
+
+.heading{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+/* added event container */
+.container2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 400px;
+  background: rgb(247, 251, 245);
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 2px 0px 0px #DDDDDD;
+  letter-spacing: -0.5px;
+  header {
+    margin-bottom: 0; 
+  }
+}
+.deleteButton{
+  padding: 10px;
+  background-color: #ec1e1e;
+  border-radius: 10px;
+}
+.deleteButton:hover{
+  background-color: #b82323;
+}

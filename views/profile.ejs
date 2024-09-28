@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management</title>
+  <link rel="stylesheet" href="/stylesheets/profile.css">
+</head>
+
+<header class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <h2  class="navbar-brand">Manage Your Events</h2>
+    </div>
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/createevent">Add an Event</a>
+        </li>
+        <li>
+          <a href="/about" >About</a>
+        </li>
+        <li>
+          <a href="/addevent"> Event Discovery</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li class="active">
+          <a href="/login">Log out</a>
+        </li>
+      </ul>
+
+  </div>
+</header>
+
+
+<body>
+
+  <div class="heading"><h1 >EVENTS</h1></div>
+
+  <div class="container2">
+
+      <% user1.events.forEach(function(event){%>
+
+        <div class="details">
+          <h1 class='title'><%= event.eventname%></h1>
+          <h3 class='date'><%= event.date%></h3>
+          <h2 class='venue'><%= event.location%></h2>
+          <h4 class='description'><%= event.description%></h4>
+          <button class="deleteButton">Delete</button>
+        </div>
+        
+        <%  })%>
+
+    </div>
+
+    <!-- Script for deleting -->
+        <script>
+
+const deleteButtons = document.querySelectorAll('.deleteButton');
+          deleteButtons.forEach(deleteButton => {
+  deleteButton.addEventListener('click', function() {
+   
+    const userContainer = this.parentElement;
+
+    userContainer.remove();
+  });
+});
+
+        </script>
+</body>
+
+</html>

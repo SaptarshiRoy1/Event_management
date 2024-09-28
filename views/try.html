@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Creation</title>
+    <link rel="stylesheet" href="../public/stylesheets/createEvent.css">
+    <!-- <link rel="stylesheet" href="/stylesheets/incentive.css" -->
+</head>
+<body>
+    <div class="container">
+        <h1 id="head">Event Creation</h1>
+        
+        <form id="eventForm" action="/upload" method="post" >
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+
+            <button id="Btn" type="submit">Add Holiday Package</button>
+            <a id="backBtn" href="/profile">Back</a>
+        </form>
+        <div id="packageList"></div>
+    </div>
