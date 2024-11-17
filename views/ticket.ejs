@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/editEvents.css">
+    <title>Ticket</title>
+</head>
+<body>
+    
+    <form action="/booking/<%= event._id %>" method="POST">
+
+
+        <h2>Book This Event</h2>
+
+            <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder="Attedee's Name " required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="email" name="email" placeholder="Your Email " required>
+            </div>
+
+            <div class="input-group">
+                <p>TicketPrices: <%= event.ticketPrices%>$</p>
+                <a href="https://razorpay.com/">Pay Now</a>
+            </div>
+
+            <div class="input-group">
+                <p>Availability: <%= event.Availability%></p>
+            </div>
+
+        <button type="submit">Register</button>
+    </form>
+    
+</body>
+</html>

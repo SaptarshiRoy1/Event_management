@@ -15,7 +15,7 @@
     </div>
       <ul class="nav navbar-nav">
         <li>
-          <a href="/createevent">Add an Event</a>
+          <a href="/createevent">Create an Event</a>
         </li>
         <li>
           <a href="/about" >About</a>
@@ -24,7 +24,7 @@
           <a href="/addevent"> Event Discovery</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
         <li class="active">
           <a href="/login">Log out</a>
@@ -37,26 +37,66 @@
 
 <body>
 
-  <div class="heading"><h1 >EVENTS</h1></div>
+  <!-- BOOKED EVENTS ----------->
+  <div class="heading"><h1 >BOOKED EVENTS</h1></div>
 
   <div class="container2">
 
-      <% user1.events.forEach(function(event){%>
-
+      <% user1.bookedEvents.forEach(function(event){%>
+      
         <div class="details">
           <h1 class='title'><%= event.eventname%></h1>
-          <h3 class='date'><%= event.date%></h3>
-          <h2 class='venue'><%= event.location%></h2>
-          <h4 class='description'><%= event.description%></h4>
-          <button class="deleteButton">Delete</button>
+          <h3 class='date'>Date: <%= event.date%></h3>
+          <h2 class='venue'>location: <%= event.location%></h2>
+          <p class='description'>Description: <%= event.description%></p>
+          <h4 class='createdBy'>Organizer: <%= event.createdBy%></h4>
+          <p class="ticketPrices">TicketPrices: <%= event.ticketPrices%>$</p>
+          <p class="Availability">Availability: <%= event.Availability%></p>
+          <p class="refundPolicy">RefundPolicy: <%= event.refundPolicy%></p>
+          
+        </form>
+        <form action="/delete-booked-events/<%= event._id %>"  class="deleteForm">
+          <button type="submit" class="deleteButton">Delete</button>
+      </form>
         </div>
         
         <%  })%>
 
     </div>
 
+    <!-- CREATED EVENTS ------------------>
+    <div class="heading"><h1 >Your Events To Organize</h1></div>
+
+    <div class="container2">
+  
+        <% user1.createdEvents.forEach(function(event){%>
+  
+          <div class="details">
+            <h1 class='title'><%= event.eventname%></h1>
+            <h3 class='date'>Date: <%= event.date%></h3>
+            <h2 class='venue'>location: <%= event.location%></h2>
+            <p class='description'>Description: <%= event.description%></p>
+            <h4 class='createdBy'>Organizer: <%= event.createdBy%></h4>
+            <p class="ticketPrices">TicketPrices: <%= event.ticketPrices%>$</p>
+            <p class="Availability">Availability: <%= event.Availability%></p>
+            <p class="refundPolicy">RefundPolicy: <%= event.refundPolicy%></p>
+            <form action="/edit/<%= event._id %>"  class="deleteForm">
+              <button type="submit" class="deleteButton">Edit</button>
+          </form>
+            <form action="/delete/<%= event._id %>"  class="deleteForm">
+              <button type="submit" class="deleteButton">Delete</button>
+          </form>
+          </div>
+          
+          <%  })%>
+  
+      </div>
+  
+
+
+
     <!-- Script for deleting -->
-        <script>
+        <!-- <script>
 
 const deleteButtons = document.querySelectorAll('.deleteButton');
           deleteButtons.forEach(deleteButton => {
@@ -68,7 +108,7 @@ const deleteButtons = document.querySelectorAll('.deleteButton');
   });
 });
 
-        </script>
+        </script> -->
 </body>
 
 </html>

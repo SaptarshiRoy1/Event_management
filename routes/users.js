@@ -1,6 +1,6 @@
 // var express = require('express');
 // var router = express.Router();
-const plm = require("passport-local-mongoose")
+const plm = require("passport-local-mongoose")//for handeling hashing salting of password
 
 const mongoose = require('mongoose')
 // mongoose.connect("mongodb://127.0.0.1:27017/EventManagement")
@@ -12,10 +12,18 @@ const userSchema = new mongoose.Schema({
   email: { type: String, unique: true, required: true },
   password: { type: String,},
   fullname:{type:String,required:true},
-
-  events:[{
+  bookedEvents:[{
     type:mongoose.Schema.Types.ObjectId,
     ref:"events"
+  }],
+  createdEvents:[{
+    type:mongoose.Schema.Types.ObjectId,
+    ref:"events"
+  }],
+  
+  attendeeTicketId:[{
+    type:mongoose.Schema.Types.ObjectId,
+    ref:"ticket"
   }]
 });
 

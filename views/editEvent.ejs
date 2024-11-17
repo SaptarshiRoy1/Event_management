@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/editEvents.css">
+    <title>Edit Your Events to Organize</title>
+</head>
+<body>
+    
+<div class="form-container">
+        <form id="contactForm" action="/edit/<%= event._id %>" method="post">
+            <h2>Edit This Events</h2>
+
+            <div class="input-group">
+                    <input type="text" id="eventName" name="eventname" placeholder="Event Name " required>
+            </div>
+
+            <div class="input-group">
+                <input type="date" id="date" name="date" placeholder="Date " required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="location" name="location" placeholder="Location " required>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="ticketPrices" name="ticketPrices" placeholder="TicketPrices " required>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="Availability" name="Availability" placeholder="Availability " required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="refundPolicy" name="refundPolicy" placeholder="RefundPolicy " required>
+            </div>
+
+            <div class="input-group">
+                <textarea id="description" name="description" rows="5" placeholder="Description " required></textarea>
+            </div>
+           
+            <button type="submit">Confirm</button>
+        </form>
+    </div>
+    
+</body>
+</html>

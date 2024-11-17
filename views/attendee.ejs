@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/attendee.css">
+    <title>Your Invites</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="heading">
+            Your attendee list
+        </div>
+
+        <div class="body">
+
+          <% user1.attendeeTicketId.forEach(function(ticket){%>  
+            <!-- <form action="/email/<%=ticket.email%>" method="get"> -->
+            <div class="box">
+                <h3>Name: <%= ticket.attendeename %></h3>
+                <p class="one">Email: <%= ticket.email %></p>
+                <p class="two">Event: <%= ticket.eventname %></p>
+                <p class="three">Ticket Price : <%= ticket.price %></p>
+                <button class="btn" onclick="notifyUser('<%= ticket.email %>')">Notify</button>
+                <!-- <button class="btn" >Notify</button> -->
+            </div>
+        <!-- </form> -->
+            <% })%>
+
+        </div>
+
+    </div>
+
+
+<script>
+function notifyUser(email) {
+    const subject = ('Notification');
+    const body = ('Dear Attedeen! Your ticket has been confirmed. Thank You!');
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+}
+</script>
+</body>
+</html>

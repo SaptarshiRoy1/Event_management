@@ -8,20 +8,24 @@
               background-color: #a4f98e;
               opacity: 0.3; /* Adjust opacity level */
               z-index: -1; /* Ensure background image is behind the text */
+              background-image: url('../images/—Pngtree—wavy\ abstract\ curve\ lines_5487239.png');
+  
+            background-repeat: no-repeat;
+            background-size: 100%;
   }
 
 
 .container {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 0px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-input[type="text"], input[type="date"], textarea, button {
-    margin: 10px 0;
+ input[type="date"], input[type="number"], input[type="text"], textarea, button{
+    margin: 7px 0;
     display: block;
     width: 100%;
     border-radius: 6px;
@@ -44,77 +48,16 @@ font-weight: 800;
     font-weight: bold;
     border-radius: 8px;
     box-shadow: -3px -3px 7px #168f1e, 3px 3px 5px #208a12;
-    padding: 20px;
+    padding: 10px;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-
-/* #holiday input{
-    border-radius: 10px;
-    border: 1px solid black;
-} */
-
-/* .delete-btn{
-    border: 0px;
-  box-shadow: -3px -3px 7px #ab0202, 3px 3px 5px #930101;
-  border-radius: 20px;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: 29px;
-  background-color: red;
-  padding: 4px;
-  margin: 10px;
-  margin-bottom: 0px;
-} */
-/* .delete-btn:hover{
-  background-color: rgb(199, 3, 3);
-  box-shadow: inset -2px -2px 3px #7f0101, inset 2px 2px 3px #570101;
-} */
-/* .cardcontainer{
-    display: flex;
-    flex-direction: row;
-} */
-/* .cards,.Addedcards{
-    background: white;
-    align-items: center;
-    margin :20px;
-    margin-top: 10px;
-    width: 32rem;
-    border-radius: 8px;
-    /* box-shadow: -3px -3px 7px #ceced1, 3px 3px 5px #ceced1; */
-    /* padding: 10px;
-    word-wrap: break-word;
-
-    box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
-} */ 
-/* .Addedcards{
-    width:20rem;
-    width: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#eventForm:hover{
+    box-shadow: -7px -7px 10px #229b14, 7px 7px 10px #229b14;
 }
-#packageList{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-} */
-
-/* #AddedCardDeleteBtn{
-    width: 5rem;
-} */
 
 #backBtn{
     background: none;
@@ -124,8 +67,8 @@ font-weight: 800;
     outline: none;
     height: 35px;
     width: 100%;
-    padding: 5px;
-    margin: 15px;
+    padding: 6px;
+    margin: 12px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: bold;
@@ -135,7 +78,8 @@ font-weight: 800;
 }
 
 #Btn{
-    padding: 10px;
+    margin-top: 15px;
+    padding: 5px;
     background-color: #ec1e1e;
     border-radius: 10px;
     font-size: 20px;

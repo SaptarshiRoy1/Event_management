@@ -11,6 +11,10 @@ body {
   padding: 1.5em 0;
   margin: 1.5em 0;
   background: #d6f1dc;
+  background-image: url('../images/—Pngtree—wavy\ abstract\ curve\ lines_5487239.png');
+  
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .event {
@@ -31,7 +35,7 @@ body {
 
 .AddButton{
     padding: 10px;
-    background-color: #ec1e1e;
+    background-color: #f02727;
     border-radius: 10px;
     color: black;
     text-decoration: none;
@@ -44,7 +48,7 @@ img {
   width: 100%;
 }
 
-.details {
+.details1 {
   padding: 0 0.5em;
   border-bottom: 1px solid #EEEEEE;
 }
@@ -53,7 +57,7 @@ img {
   display: block;
   color: #555;
   padding: 0 0.3em 1.2em 0.3em;
-  min-height: 80px; 
+  min-height: 50px; 
   font-weight: 700;
 }
 
@@ -63,11 +67,12 @@ img {
   font-weight: 400;
 }
 
-.venue {
+.venue  {
   color: #ADB0B6;
   font-size: 13px;
   padding: 8px 6px;
 }
+.refundPolicy{color: #ec1e1e;font-size: 13px;}
 
 .price {
   position: absolute;
